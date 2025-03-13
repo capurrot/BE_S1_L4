@@ -6,8 +6,13 @@ public class Main {
         Dipendente dipendente2 = new Dipendente(456, 6000, Dipartimento.AMMINISTRAZIONE);
         Dipendente dipendente3 = new Dipendente(789, 7000, Dipartimento.VENDITE);
 
-        for (Dipendente dipendente : new Dipendente[]{dipendente1, dipendente2, dipendente3}) {
-            System.out.println("Matricola: " + dipendente.getMatricola());
+        Dipendente [] dipendente = new Dipendente[3];
+        dipendente[0] = dipendente1;
+        dipendente[1] = dipendente2;
+        dipendente[2] = dipendente3;
+
+        for (int i = 0; i < dipendente.length; i++) {
+            System.out.println("Matricola: " + dipendente[i].getMatricola());
         }
     }
 }
