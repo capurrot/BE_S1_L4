@@ -11,10 +11,10 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 public abstract class Dipendente {
-    protected int matricola;
-    protected double stipendio;
+    private int matricola;
+    private double stipendio;
     @Setter
-    protected Dipartimento dipartimento;
+    private Dipartimento dipartimento;
 
     public abstract double calculateSalary();
 }
